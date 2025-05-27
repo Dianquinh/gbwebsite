@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gb.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <title>Gertraud Burger | research and collaborations</title>
+</head>
+<body class="top_page">
+    <header>
+
+        <div class="topbar_2">
+            <div class="gblab_2">
+                <a class="home_link" href="home.html">
+                  <span class="big">G</span>ERTRAUD <span class="big">B</span>URGER |
+                  <br>research and collaborations
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggleBtn" onclick="toggleMenu()">☰</button>
+            <nav class="navbar2">
+                <a href="home.html">Home</a>
+                <a href="current_research.html">Current Research</a>
+                <a href="publications_and_lectures.html">Publications and Lectures</a>
+                <a href="people.html">Lab members</a>
+                <a href="home.html#personal_information">Personal Information</a>
+                <a href="teaching.html">Teaching</a>
+            </nav>
+        </div>
+
+        <div class="bottom_nav">
+            <div class="overlay"></div>
+            <div class="part"><h1>Teaching</h1></div>
+        </div>
+
+    </header>
+
+    <div class="page">
+
+        <div class="general_research">
+            <p style="margin-bottom: 20px; margin-left: 40px;" class="description">Courses taught at Université de Montréal</p>
+            <div class="course">
+                <div class="course_type">
+                    <img class="logo" src="image/cours.png" alt="Image 1"/> 
+                    <a class="course_link" href="https://admission.umontreal.ca/cours-et-horaires/cours/bin-6002/">BIN6002</a>
+                </div>
+                <p class="description">Principes d'analyse génomique (principles of genome analysis, MSc program in bioinformatics).</p>
+                
+            </div>
+
+            <div class="course">
+                <div class="course_type">
+                    <img class="logo" src="image/cours.png" alt="Image 2"/> 
+                    <a class="course_link" href="https://admission.umontreal.ca/cours-et-horaires/cours/bin-6007/">BIN6007</a>
+                </div>
+                <p class="description">Stages avec rapport (6-month internship with report, MSc program in bioinformatics).</p>
+            </div>
+
+            <div class="course">
+                <div class="course_type">
+                    <img class="logo" src="image/cours.png" alt="Image 3"/> 
+                    <a class="course_link" href="https://admission.umontreal.ca/cours-et-horaires/cours/bin-70051/">BIN70051 </a>,&nbsp
+		            <a class="course_link" href="https://admission.umontreal.ca/cours-et-horaires/cours/bin-70052/">BIN70052 </a>
+                </div>
+                <p class="description">Communication scientifique en bioinformatique avancée, niveau 1 (scientific communication, 
+                    level 1, PhD program in bioinformatics)</p>
+                
+            </div>
+   
+        </div>
+
+
+    </div>
+    
+    <footer>
+        <div class="overfooter">
+            <div class="overlay2"></div>
+            <p class="contact">
+                CONTACT <br>
+                Université de Montréal <br>
+                Robert-Cedergren Center in Bioinformatics & Genomics<br>
+                Département de Biochimie<br>
+                Pavillon J. Armand Bombardier<br>
+                2900 Blvd Edouard-Montpetit<br>
+                Montréal, Québec, Canada, H3T 1J4<br>
+                email: gertraud.burger[AT]umontreal.ca &nbsp&nbsp&nbsp&nbsp where [AT]=@
+            </p>
+            <p class="design">© 2025 Gertraud Burger. Made by mariamadb[at]hotmail.com</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const faders = document.querySelectorAll(".fade-in");
+      
+          const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                obs.unobserve(entry.target); // une seule fois
+              }
+            });
+          }, {
+            threshold: 0.1
+          });
+      
+          faders.forEach(el => observer.observe(el));
+        });
+
+
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar2');
+            const toggleBtn = document.getElementById('menuToggleBtn');
+
+            navbar.classList.toggle('active');
+
+            if (navbar.classList.contains('active')) {
+                toggleBtn.textContent = '✖'; 
+            } else {
+                toggleBtn.textContent = '☰'; 
+            }
+            }
+
+        function closeMenuOnResize() {
+        const navbar = document.querySelector('.navbar2');
+        const toggleBtn = document.getElementById('menuToggleBtn');
+        if (window.innerWidth > 768) {
+            navbar.classList.remove('active');
+            toggleBtn.textContent = '☰'; 
+        }
+        }
+        window.addEventListener('resize', closeMenuOnResize);
+
+      </script>
+      
+
+
+</body>
+</html>
