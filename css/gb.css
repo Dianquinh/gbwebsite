@@ -329,7 +329,7 @@
   .details1{
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
+  color: #2e3c3d;
 
   }
   .details2{
@@ -640,7 +640,7 @@
 @media (max-width: 768px) {
   body {
   padding-top: 66px; 
-  font-weight: 400; 
+  font-weight: 300;
   }
 
   body.top_page{
@@ -862,7 +862,7 @@
   .details1{
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
+  color: #2e3c3d;
 
   }
 
@@ -1027,10 +1027,11 @@
   }
 
 @media (max-width: 700px) {
- body {
-  font-weight: 400; 
-}   
- .logos{
+
+  body {
+  font-weight: 300;
+  }
+    .logos{
   width: 120px; 
   height: 50px; 
   margin-right: 0;
@@ -1095,10 +1096,11 @@
   }
 
 @media (max-width: 570px) {
- body {
-  font-weight: 400; 
-} 
- .logos{
+  body {
+  font-weight: 300;
+  }
+
+  .logos{
     display: none;
     }
   .logos_um{
@@ -1172,10 +1174,12 @@
 }
 
 @media (max-width: 412px) {
- body {
-  font-weight: 400; 
-} 
- .logos{
+
+  body {
+  font-weight: 300;
+  }
+
+  .logos{
     display: none;
     }
   .logos_um{
@@ -1255,10 +1259,11 @@
   }
 
 @media (max-width: 380px) {
- body {
-  font-weight: 400; 
-}
- .logos{
+  body {
+  font-weight: 300;
+  }
+  
+  .logos{
     display: none;
     }
   .logos_um{
@@ -1534,7 +1539,7 @@
     .details1{
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: #2e3c3d;
   
     }
     .details2{
