@@ -1291,8 +1291,8 @@
   }
 
   .gbimg {
-  width: 90px; 
-  height: 139px; 
+  width: 120px; 
+  height: 141px; 
   object-fit: cover;   
   /*object-fit: contain;*/
   object-position: center;
