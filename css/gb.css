@@ -48,10 +48,6 @@
   margin-left: 7%; 
   }
 
-  .part h1{
-  font-size: 70px;
-  }
-
   h1.secondary_pages{
   margin-bottom: 20px;
   color: #03304b;
@@ -632,6 +628,7 @@
 
   .menu-toggle2 {
   display: none;
+
   }
 
 
@@ -886,6 +883,7 @@
 
   .part h1{
   font-size: 40px;
+  font-weight:350;
   }
 
   .project_name {
@@ -1092,6 +1090,9 @@
   margin-left: 10%;
   padding-top: 35px;
   }
+  .part h1{
+  font-weight:350;
+  }
   }
 
 @media (max-width: 570px) {
@@ -1169,7 +1170,100 @@
   margin-left: 10%;
   padding-top: 35px;
   }
+
+  .part h1{
+  font-weight:350;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+  font-weight: 350;
+  }
+
+  .logos{
+    display: none;
+    }
+  .logos_um{
+    display: none;
+    }
+
+  .logo_group{
+    display: block;
+    width: 110px;
+    height: 77px;
+  }
+
+  .gb{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0e535c;
+    }
   
+  .gb2 {
+    display: flex;
+    flex: 1 1 0; 
+    margin-right: 0;
+  }
+
+  .infos {
+    flex: 1 1 auto; 
+    min-width: 0; 
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }        
+  .gb_name {
+  font-size: 16px;
+  color: white; 
+  font-weight: bold;
+  }
+  .gb_position {
+  font-size: 13px;
+  color: #f3d87f;
+  }
+  .gb_infos {
+  font-size: 11px;
+  color: #f3d87f;
+  }
+
+  .gbimg {
+  width: 123px; 
+  height: 141px; 
+
+  object-fit: cover; 
+  object-position: center;
+  margin-right: 10px;
+  }
+
+  .overlay2{
+    height: 270px;
+  }
+
+  footer {
+  height: 270px;
+  }
+
+  .overfooter{
+  height:270px;
+  position: relative;
+  }
+
+  .design{
+  margin-top: 50px;
+  font-size: 11px;
+  }
+  .contact{
+  font-size: 12px;
+  margin-left: 10%;
+  padding-top: 35px;
+  }
+  
+  .part h1{
+  font-weight:350;
+  }
 }
 
 @media (max-width: 412px) {
@@ -1255,11 +1349,15 @@
   margin-left: 10%;
   padding-top: 35px;
   }
+
+  .part h1{
+  font-weight:350;
+  }
   }
 
 @media (max-width: 400px) {
   body {
-  font-weight: 300;
+  font-weight: 350;
   }
 
   .logos{
@@ -1343,7 +1441,12 @@
   margin-left: 10%;
   padding-top: 35px;
   }
+
+  .part h1{
+  font-weight:350;
   }
+  }
+
 @media (min-width: 769px) and (max-width: 980px) {
   body.top_page{
   padding-top: 70px; 
